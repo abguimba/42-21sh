@@ -5,7 +5,7 @@ We had to start from our minishell and make it stronger to get little by little 
 
 
 
-<img src="/images/21sh01.png" alt="21sh01" width="700"/>
+<img src="/images/21sh01.gif" alt="21sh01" width="700"/>
 
 
 
