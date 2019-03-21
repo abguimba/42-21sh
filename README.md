@@ -3,7 +3,7 @@
 
 We had to start from our minishell and make it stronger to get little by little closer to a real functionnal shell. We added couple of features such as multi-command management, redirections as well as line edition that will allow you to use arrows for example.
 
-
+Note: We used our 42sh to turn in our 42sh, and our 21sh. So you'll find really similar files in both repos.
 
 <img src="/images/21sh01.gif" alt="21sh01" width="700"/>
 
