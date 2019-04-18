@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   cursor_check.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abguimba <abguimba@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/03 02:54:31 by bsiche            #+#    #+#             */
-/*   Updated: 2019/03/20 06:11:03 by abguimba         ###   ########.fr       */
+/*   Created: 2018/12/03 02:54:31 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:39 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/sh42.h"
+#include "sh21.h"
 
 int	check_up(void)
 {

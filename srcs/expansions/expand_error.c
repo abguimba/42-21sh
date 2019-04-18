@@ -3,24 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   expand_error.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mjose <mjose@student.42.fr>                +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/03/03 06:17:07 by mjose             #+#    #+#             */
-/*   Updated: 2019/03/17 06:12:17t  by mjose            ###   ########.fr       */
+/*   Created: 2019/03/03 06:17:07 by abguimba          #+#    #+#             */
+/*   Updated: 2019/04/17 23:52:31 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "expansions.h"
-#include "sh42.h"
-
-void	rmv_tab_exec(char **tab_exec, int to)
-{
-	int		i;
-
-	i = 0;
-	while (tab_exec[i] && i < to + 1)
-		ft_strdel(&tab_exec[i++]);
-}
+#include "sh21.h"
 
 void	print_exp_error_dpoints(char *varname, char *value, int sign)
 {

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   mode.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsiche <bsiche@student.42.fr>              +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/28 13:40:46 by bsiche            #+#    #+#             */
-/*   Updated: 2018/12/18 20:21:06 by bsiche           ###   ########.fr       */
+/*   Created: 2018/01/28 13:40:46 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:24 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sh42.h"
+#include "sh21.h"
 #include <time.h>
 
 char	ft_type(mode_t c)

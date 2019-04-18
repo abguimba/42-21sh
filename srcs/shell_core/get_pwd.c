@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_pwd.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsiche <bsiche@student.42.fr>              +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/19 23:40:16 by bsiche            #+#    #+#             */
-/*   Updated: 2019/01/19 23:40:36 by bsiche           ###   ########.fr       */
+/*   Created: 2019/01/19 23:40:16 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:24 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sh42.h"
+#include "sh21.h"
 
 char	*ft_true_pwd(void)
 {
@@ -20,6 +20,6 @@ char	*ft_true_pwd(void)
 	buf = ft_strnew(1024);
 	getcwd(buf, 1024);
 	str = ft_strdup(buf);
-	free(buf);
+	ft_free(buf);
 	return (str);
 }

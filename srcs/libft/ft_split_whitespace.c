@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split_whitespace.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsiche <bsiche@student.42.fr>              +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/06 05:38:49 by bsiche            #+#    #+#             */
-/*   Updated: 2018/12/05 15:23:41 by bsiche           ###   ########.fr       */
+/*   Created: 2018/08/06 05:38:49 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:39 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ char	**ft_split_white(char *str)
 	i = 0;
 	free_tab(tab);
 	tab = ft_strsplit(newstr, ' ');
-	free(newstr);
+	ft_free(newstr);
 	return (tab);
 }

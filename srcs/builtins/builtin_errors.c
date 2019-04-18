@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   builtin_errors.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abguimba <abguimba@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/15 12:52:33 by alsomvil          #+#    #+#             */
-/*   Updated: 2019/03/20 04:55:56 by abguimba         ###   ########.fr       */
+/*   Created: 2018/08/15 12:52:33 by abguimba          #+#    #+#             */
+/*   Updated: 2019/04/17 23:52:31 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
-#include "sh42.h"
+#include "sh21.h"
 
 int			errors_hash(char *binary, int error)
 {
@@ -33,7 +32,7 @@ int			errors_hash(char *binary, int error)
 	return (-1);
 }
 
-int			errors_fg(int nb, int error)
+int			errors_fg(int nb, int error, char *hold)
 {
 	if (error == 1)
 		ft_putendl_fd(SHELL_NAME": fg: only one job supported", 2);
@@ -51,10 +50,11 @@ int			errors_fg(int nb, int error)
 	}
 	else if (error == 4)
 		ft_putendl_fd(SHELL_NAME": fg: no jobs!", 2);
+	ft_strdel(&hold);
 	return (1);
 }
 
-int			errors_bg(int nb, int error)
+int			errors_bg(int nb, int error, char *hold)
 {
 	if (error == 0)
 	{
@@ -78,6 +78,7 @@ int			errors_bg(int nb, int error)
 	}
 	else if (error == 4)
 		ft_putendl_fd(SHELL_NAME": bg: no jobs!", 2);
+	ft_strdel(&hold);
 	return (1);
 }
 

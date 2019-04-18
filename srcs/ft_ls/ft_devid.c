@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_devid.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsiche <bsiche@student.42.fr>              +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/13 22:08:12 by bsiche            #+#    #+#             */
-/*   Updated: 2018/12/18 20:31:28 by bsiche           ###   ########.fr       */
+/*   Created: 2018/02/13 22:08:12 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:24 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sh42.h"
+#include "sh21.h"
 
 size_t	ft_getidlen(t_list *liste, int i)
 {

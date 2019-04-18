@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   test_tab.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsiche <bsiche@student.42.fr>              +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/03/17 03:49:52 by bsiche            #+#    #+#             */
-/*   Updated: 2019/03/17 03:51:14 by bsiche           ###   ########.fr       */
+/*   Created: 2019/03/17 03:49:52 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:39 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sh42.h"
+#include "sh21.h"
 
 char	**copy_tab_minus_one(int argc, char **argv)
 {
@@ -20,7 +20,7 @@ char	**copy_tab_minus_one(int argc, char **argv)
 
 	i = 1;
 	a = 0;
-	av = malloc(sizeof(char *) * (argc + 1));
+	av = ft_malloc(sizeof(char *) * (argc + 1));
 	while (argv[i])
 	{
 		av[a] = ft_strdup(argv[i]);

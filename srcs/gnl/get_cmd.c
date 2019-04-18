@@ -3,36 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   get_cmd.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abguimba <abguimba@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/12 03:05:45 by bsiche            #+#    #+#             */
-/*   Updated: 2019/03/20 04:28:50 by bsiche           ###   ########.fr       */
+/*   Created: 2018/08/12 03:05:45 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:39 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sh42.h"
+#include "sh21.h"
 
 void	ft_return(void)
 {
 	g_tracking.cmd = ft_strdup(g_tracking.str);
-	free(g_tracking.str);
-	free(g_tracking.cpaste->line);
-	free(g_tracking.cpaste);
+	ft_free(g_tracking.str);
+	ft_free(g_tracking.cpaste->line);
 	g_tracking.str = NULL;
 	cursor_reset();
-}
-
-void	test_read2(char *str)
-{
-	int		i;
-
-	i = 0;
-	ft_putchar('\n');
-	while (str[i])
-	{
-		printf("0x%x\n", str[i]);
-		i++;
-	}
 }
 
 void	left_right(char *str)
@@ -91,10 +77,9 @@ int		is_cmd(char *str)
 	{
 		if (ft_strncmp(str, tmp->content, i) == 0)
 			flag++;
-		if (strlen(tmp->content) == i && ft_strncmp(str, tmp->content, i) == 0)
-		{
+		if (ft_strlen(tmp->content) == i
+			&& ft_strncmp(str, tmp->content, i) == 0)
 			return (ft_exec_key(str));
-		}
 		tmp = tmp->next;
 	}
 	if (flag == 0)

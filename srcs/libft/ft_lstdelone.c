@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cababou <cababou@student.42.fr>            +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/13 20:09:47 by cababou           #+#    #+#             */
-/*   Updated: 2018/08/13 02:22:48 by cababou          ###   ########.fr       */
+/*   Created: 2019/04/16 03:05:53 by abguimba          #+#    #+#             */
+/*   Updated: 2019/04/17 23:52:31 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	ft_lstdelone(t_list *el, int free_content)
 			}
 		}
 		if (el->content && free_content)
-			free(el->content);
-		free(el);
+			ft_free(el->content);
+		ft_free(el);
 	}
 }

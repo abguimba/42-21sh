@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_clean_bis.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsiche <bsiche@student.42.fr>              +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/22 21:41:22 by bsiche            #+#    #+#             */
-/*   Updated: 2018/12/18 20:40:27 by bsiche           ###   ########.fr       */
+/*   Created: 2018/05/22 21:41:22 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:24 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sh42.h"
+#include "sh21.h"
 
 char	*ft_subtime(char *dup, char *tmp)
 {

@@ -3,20 +3,41 @@
 /*                                                        :::      ::::::::   */
 /*   var_list.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abguimba <abguimba@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/18 20:45:18 by bsiche            #+#    #+#             */
-/*   Updated: 2019/03/20 06:11:03 by abguimba         ###   ########.fr       */
+/*   Created: 2018/12/18 20:45:18 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:39 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sh42.h"
+#include "sh21.h"
+
+int					end_word(int mode)
+{
+	char	*tmp;
+	int		i;
+
+	i = utf_goto(g_tracking.str, g_tracking.pos->abs);
+	tmp = g_tracking.str;
+	mode = 0;
+	if (tmp != NULL)
+	{
+		if (is_space_ac(tmp, i) == 1)
+			i--;
+		if (is_space_ac(tmp, i) == 1 && (tmp[i] - 1) && tmp[i - 1] == '/')
+			return (i + 1);
+		while (is_space_ac(tmp, i) != 1 && tmp[i])
+			i++;
+		print_and_go(i);
+	}
+	return (i);
+}
 
 t_ls				*ls_alloc(char *str)
 {
 	t_ls			*info;
 
-	info = malloc(sizeof(t_ls) + 1);
+	info = ft_malloc(sizeof(t_ls) + 1);
 	info->name = ft_strdup(str);
 	info->path = NULL;
 	info->symlink = NULL;

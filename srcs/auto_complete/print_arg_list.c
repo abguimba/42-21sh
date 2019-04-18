@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   print_arg_list.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abguimba <abguimba@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/18 20:45:18 by bsiche            #+#    #+#             */
-/*   Updated: 2019/03/20 03:01:58 by bsiche           ###   ########.fr       */
+/*   Created: 2018/12/18 20:45:18 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:39 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sh42.h"
+#include "sh21.h"
 
 char			*ft_joinline(int col_nbr, int i, t_ls *arg)
 {
@@ -58,10 +58,9 @@ char			*ft_createline(void)
 
 int				ft_menuline(void)
 {
-
 	if (g_tracking.aut->menuline)
 	{
-		free(g_tracking.aut->menuline);
+		ft_free(g_tracking.aut->menuline);
 		g_tracking.aut->menuline = NULL;
 	}
 	g_tracking.aut->menuline = ft_createline();

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   test_three_arg.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsiche <bsiche@student.42.fr>              +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/20 05:31:34 by bsiche            #+#    #+#             */
-/*   Updated: 2019/03/17 03:51:59 by bsiche           ###   ########.fr       */
+/*   Created: 2019/01/20 05:31:34 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:39 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sh42.h"
+#include "sh21.h"
 
 int			string_test(char **argv)
 {

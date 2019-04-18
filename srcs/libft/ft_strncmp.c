@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsiche <bsiche@student.42.fr>              +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/01 17:28:08 by bsiche            #+#    #+#             */
-/*   Updated: 2019/03/17 01:32:07 by bsiche           ###   ########.fr       */
+/*   Created: 2017/12/01 17:28:08 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:39 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ int		ft_strncmplc(const char *s1, const char *s2, size_t n)
 		i++;
 	}
 	i = ft_strncmp(cmp1, cmp2, n);
-	free(cmp1);
-	free(cmp2);
+	ft_free(cmp1);
+	ft_free(cmp2);
 	return (i);
 }

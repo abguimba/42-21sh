@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_clean.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsiche <bsiche@student.42.fr>              +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/30 00:36:57 by bsiche            #+#    #+#             */
-/*   Updated: 2018/12/18 20:41:14 by bsiche           ###   ########.fr       */
+/*   Created: 2018/01/30 00:36:57 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:24 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sh42.h"
+#include "sh21.h"
 
 void	ft_cleantime(t_list *liste)
 {
@@ -24,7 +24,7 @@ void	ft_cleantime(t_list *liste)
 	{
 		buf = list->content;
 		dup = ft_strdup(buf->strtime);
-		free(buf->strtime);
+		ft_free(buf->strtime);
 		if (buf->timeswitch == 1)
 		{
 			tmp = ft_subtime(dup, tmp);

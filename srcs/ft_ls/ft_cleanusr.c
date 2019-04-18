@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_cleanusr.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsiche <bsiche@student.42.fr>              +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/30 00:36:57 by bsiche            #+#    #+#             */
-/*   Updated: 2018/12/18 20:39:12 by bsiche           ###   ########.fr       */
+/*   Created: 2018/01/30 00:36:57 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:39 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sh42.h"
+#include "sh21.h"
 
 int		ft_getmaxusr(t_list *liste)
 {

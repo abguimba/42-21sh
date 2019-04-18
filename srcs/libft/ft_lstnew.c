@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cababou <cababou@student.42.fr>            +#+  +:+       +#+        */
+/*   By: abe <abe@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/13 20:10:57 by cababou           #+#    #+#             */
-/*   Updated: 2018/08/11 04:37:32 by cababou          ###   ########.fr       */
+/*   Created: 2017/12/13 20:10:57 by alsomvil          #+#    #+#             */
+/*   Updated: 2019/04/17 23:56:39 by abe              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list	*ft_lstnew(void const *content)
 {
 	t_list		*liste;
 
-	if ((liste = malloc(sizeof(t_list))) == NULL)
+	if ((liste = ft_malloc(sizeof(t_list))) == NULL)
 		return (NULL);
 	liste->prev = NULL;
 	liste->next = NULL;
