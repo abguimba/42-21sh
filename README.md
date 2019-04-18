@@ -5,6 +5,8 @@ We had to start from our minishell and make it stronger to get little by little 
 
 Note: We used our 42sh to turn in our 42sh, and our 21sh. So you'll find really similar files in both repos.
 
+Partners in this project -> @alsomvil42.
+
 <img src="/images/21sh01.gif" alt="21sh01" width="700"/>
 
 
